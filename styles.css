@@ -1,0 +1,214 @@
+
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    background: url('imgs/backgorund3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.rojo{
+    color: #be272e;
+}
+
+.source{
+    font-family: 'Source Sans 3', sans-serif;
+
+}
+
+.botonrojo{ 
+	background-color:#be272e;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:'Source Sans 3', sans-serif;;
+	text-decoration:none;
+    border: none;
+}
+.botonrojo:hover {
+	background-color:#e0e0e0;
+    color:#be272e;
+
+}
+.botonrojo:active {
+	position:relative;
+	top:1px;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    height: 100vh;
+    position: relative;
+}
+
+.screen.hidden {
+    display: none;
+}
+
+.canecas-container {
+    display: flex; /* Utiliza flexbox para alinear las canecas en una fila horizontal */
+    justify-content: center; /* Opcional: centra las canecas horizontalmente en el contenedor */
+    gap: 10px; /* Opcional: añade espacio entre las canecas (ajusta el valor según lo necesites) */
+    width: fit-content; /* Ajusta el ancho del contenedor al contenido (canecas) */
+    margin: 0 auto; /* Centra el contenedor en su contenedor padre si es necesario */
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+
+}
+
+.caneca {
+    width: 250px;
+    height: 25em;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.material {
+    width: 100px;
+    height: 130px;
+    background-size: cover;
+    background-position: center;
+    cursor: grab;
+    margin: 5px;
+}
+
+
+.materials-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los materiales se envuelvan a la siguiente línea si no caben en una fila */
+    gap: 10px; /* Espacio entre los materiales */
+    justify-content: center; /* Centra los materiales horizontalmente */
+    margin-bottom: 10em;
+}
+
+.material:active {
+    cursor: grabbing;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#inicio {
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+}
+
+#final {
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+}
+
+/* Estilos para pantallas inicial y final */
+#inicio, #final {
+    position: relative;
+    z-index: 1;
+}
+
+#inicio::before, #final::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+    z-index: -1; /* Detrás del contenido */
+}
+
+.gris {
+    color: #9d9d9d;
+}
+
+
+.sizemensaje {
+    font-size: 25pt;
+    font-family: 'Roboto Slab', serif;
+    font-style: bold;
+    color: #be272e;
+  
+}
+
+#caneca-negra {
+    background-image: url('imgs/caneca-negra.png');
+}
+
+#caneca-verde {
+    background-image: url('imgs/caneca-verde.png');
+}
+
+#caneca-blanca {
+    background-image: url('imgs/caneca-blanca.png');
+}
+
+/* Haz lo mismo para cada material */
+
+#plastico {
+    background-image: url('imgs/plastico.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carton {
+    background-image: url('imgs/carton.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#vidrio {
+    background-image: url('imgs/vidrio.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#cascara-fruta {
+    background-image: url('imgs/cascara-fruta.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#desechos-agricolas {
+    background-image: url('imgs/desechos-agricolas.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#pescado {
+    background-image: url('imgs/pescado.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#servilletas {
+    background-image: url('imgs/servilletas.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#icopor-comida {
+    background-image: url('imgs/icopor-comida.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#cucharas-desechables {
+    background-image: url('imgs/cucharas-desechables.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Reciclaje</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap">
+
+
+</head>
+<body>
+    <!-- Pantalla Inicial -->
+    <div id="inicio" class="screen">
+        <img src="imgs/IKBL.png" width="300">
+        <h1>Bienvenido al juego de Separar Residuos de <span class="rojo">Infométrika</span></h1>
+        <p class="source">Arrastra cada material a la caneca correcta para marcar puntos.</p>
+        <button id="start-button" class="source botonrojo">Iniciar Juego</button>
+    </div>
+
+    <!-- Pantalla del Juego -->
+    <div id="game" class="screen hidden">
+        <div class="game-container">
+            <div class="materials-container">
+                <div id="plastico" class="material" draggable="true" data-type="plastico"> </div>
+                <div id="carton" class="material" draggable="true" data-type="carton"></div>
+                <div id="vidrio" class="material" draggable="true" data-type="vidrio"></div>
+                <div id="cascara-fruta" class="material" draggable="true" data-type="cascara-fruta"></div>
+                <div id="desechos-agricolas" class="material" draggable="true" data-type="desechos-agricolas"></div>
+                <div id="pescado" class="material" draggable="true" data-type="pescado"></div>
+                <div id="servilletas" class="material" draggable="true" data-type="servilletas"></div>
+                <div id="icopor-comida" class="material" draggable="true" data-type="icopor-comida"></div>
+                <div id="cucharas-desechables" class="material" draggable="true" data-type="cucharas-desechables"></div>
+            </div>
+
+            <div class="canecas-container">
+                <div id="caneca-negra" class="caneca" data-caneca="negra"></div>
+                <div id="caneca-verde" class="caneca" data-caneca="verde"></div>
+                <div id="caneca-blanca" class="caneca" data-caneca="blanca"></div>
+            </div>
+        </div>
+
+        <button id="reset-game-button" class="botonrojo">Reiniciar Juego</button>
+    </div>
+
+    <!-- Pantalla Final -->
+    <div id="final" class="screen hidden">
+       
+
+        <h1>Has Finalizado!</h1>
+        <div id="imageDisplay"></div>
+        <p class="sizemensaje" id="score"></p>
+        <p id="message" class="gris source" style="font-size: 16pt;"></p>
+        <img src="imgs/IKBL.png" width="300">
+        <button id="restart-button" class="botonrojo">Jugar de Nuevo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
